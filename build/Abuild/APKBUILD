@@ -2,7 +2,7 @@
 # QNX Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=xfce4-dev-tools
 pkgver=4.21.0
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Xfce developer tools"
 url="https://xfce.org/"
 arch="all"
@@ -31,7 +31,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 0416ad6afde2babe8e4694cc76742feaf575ae45b3cf3439139ec99cedee8f0132ceb1336f0c34af7d3fb36a047d74423a171089735eb91a11473497a2142103  xfce4-dev-tools-4.21.0.tar.bz2
 "
